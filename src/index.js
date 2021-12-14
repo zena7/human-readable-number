@@ -38,7 +38,7 @@ exports.toReadable =  function  (number) {
     const numbToStr = String(number);
     const lengthStr = numbToStr.length;
   
-    let twoDigitNum = (num) => {
+    const twoDigitNum = (num) => {
       console.log("tail", num);
       const first = num[0];
       const decade = teens[first];
@@ -72,6 +72,6 @@ exports.toReadable =  function  (number) {
       return twoDigitNum(numbToStr);
     } else {
       return threeDigitNum(numbToStr);
-    }
-  }
+    };
+  };
   
