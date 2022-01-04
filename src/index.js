@@ -1,4 +1,4 @@
-exports.toReadable =  function  (number) {
+module.exports = function toReadable (number) {
     const zeroNineNumbers = {
       0: "zero",
       1: "one",
